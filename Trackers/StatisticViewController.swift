@@ -1,11 +1,9 @@
 import UIKit
 
-class TrackersViewController: UIViewController {
-
+class StatisticViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .cyan
+        view.backgroundColor = .white
     }
 }
-

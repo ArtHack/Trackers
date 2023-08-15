@@ -19,6 +19,11 @@
 		CA5004AC2A8B3EEC00ED6943 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004AB2A8B3EEC00ED6943 /* Date+Extension.swift */; };
 		CA5004AE2A8B3EFF00ED6943 /* DateHalper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004AD2A8B3EFF00ED6943 /* DateHalper.swift */; };
 		CA5004B02A8B3F1600ED6943 /* UICollor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004AF2A8B3F1600ED6943 /* UICollor+Extension.swift */; };
+		CA5004B42A8B416500ED6943 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004B32A8B416500ED6943 /* Tracker.swift */; };
+		CA5004B62A8B417600ED6943 /* TrackerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004B52A8B417600ED6943 /* TrackerCategory.swift */; };
+		CA5004B82A8B41A600ED6943 /* TrackerRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004B72A8B41A600ED6943 /* TrackerRecord.swift */; };
+		CA5004BA2A8B41B400ED6943 /* TypeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004B92A8B41B400ED6943 /* TypeTracker.swift */; };
+		CA5004BC2A8B41F700ED6943 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004BB2A8B41F700ED6943 /* WeekDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		CA5004AB2A8B3EEC00ED6943 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		CA5004AD2A8B3EFF00ED6943 /* DateHalper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHalper.swift; sourceTree = "<group>"; };
 		CA5004AF2A8B3F1600ED6943 /* UICollor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollor+Extension.swift"; sourceTree = "<group>"; };
+		CA5004B32A8B416500ED6943 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		CA5004B52A8B417600ED6943 /* TrackerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCategory.swift; sourceTree = "<group>"; };
+		CA5004B72A8B41A600ED6943 /* TrackerRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerRecord.swift; sourceTree = "<group>"; };
+		CA5004B92A8B41B400ED6943 /* TypeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTracker.swift; sourceTree = "<group>"; };
+		CA5004BB2A8B41F700ED6943 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,11 @@
 				CA5004952A8A88EE00ED6943 /* Trackers.xcdatamodeld */,
 				CA5004A62A8B3C4A00ED6943 /* TabBarController.swift */,
 				CA5004A82A8B3CA100ED6943 /* StatisticViewController.swift */,
+				CA5004B32A8B416500ED6943 /* Tracker.swift */,
+				CA5004B52A8B417600ED6943 /* TrackerCategory.swift */,
+				CA5004B72A8B41A600ED6943 /* TrackerRecord.swift */,
+				CA5004B92A8B41B400ED6943 /* TypeTracker.swift */,
+				CA5004BB2A8B41F700ED6943 /* WeekDay.swift */,
 			);
 			path = Trackers;
 			sourceTree = "<group>";
@@ -170,13 +185,18 @@
 			files = (
 				CA5004972A8A88EE00ED6943 /* Trackers.xcdatamodeld in Sources */,
 				CA5004912A8A88EE00ED6943 /* TrackersViewController.swift in Sources */,
+				CA5004B42A8B416500ED6943 /* Tracker.swift in Sources */,
 				CA50048D2A8A88EE00ED6943 /* AppDelegate.swift in Sources */,
 				CA5004A92A8B3CA100ED6943 /* StatisticViewController.swift in Sources */,
+				CA5004B82A8B41A600ED6943 /* TrackerRecord.swift in Sources */,
+				CA5004BC2A8B41F700ED6943 /* WeekDay.swift in Sources */,
 				CA5004AC2A8B3EEC00ED6943 /* Date+Extension.swift in Sources */,
 				CA5004AE2A8B3EFF00ED6943 /* DateHalper.swift in Sources */,
+				CA5004BA2A8B41B400ED6943 /* TypeTracker.swift in Sources */,
 				CA5004A72A8B3C4A00ED6943 /* TabBarController.swift in Sources */,
 				CA5004B02A8B3F1600ED6943 /* UICollor+Extension.swift in Sources */,
 				CA50048F2A8A88EE00ED6943 /* SceneDelegate.swift in Sources */,
+				CA5004B62A8B417600ED6943 /* TrackerCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

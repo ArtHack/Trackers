@@ -9,26 +9,32 @@
 /* Begin PBXBuildFile section */
 		CA50048D2A8A88EE00ED6943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50048C2A8A88EE00ED6943 /* AppDelegate.swift */; };
 		CA50048F2A8A88EE00ED6943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50048E2A8A88EE00ED6943 /* SceneDelegate.swift */; };
-		CA5004912A8A88EE00ED6943 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004902A8A88EE00ED6943 /* ViewController.swift */; };
+		CA5004912A8A88EE00ED6943 /* TrackersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004902A8A88EE00ED6943 /* TrackersViewController.swift */; };
 		CA5004972A8A88EE00ED6943 /* Trackers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA5004952A8A88EE00ED6943 /* Trackers.xcdatamodeld */; };
 		CA5004992A8A88EE00ED6943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5004982A8A88EE00ED6943 /* Assets.xcassets */; };
 		CA50049C2A8A88EE00ED6943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA50049A2A8A88EE00ED6943 /* LaunchScreen.storyboard */; };
 		CA5004A52A8A9F2D00ED6943 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA5004A42A8A9F2D00ED6943 /* SnapKit */; };
 		CA5004A72A8B3C4A00ED6943 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004A62A8B3C4A00ED6943 /* TabBarController.swift */; };
 		CA5004A92A8B3CA100ED6943 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004A82A8B3CA100ED6943 /* StatisticViewController.swift */; };
+		CA5004AC2A8B3EEC00ED6943 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004AB2A8B3EEC00ED6943 /* Date+Extension.swift */; };
+		CA5004AE2A8B3EFF00ED6943 /* DateHalper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004AD2A8B3EFF00ED6943 /* DateHalper.swift */; };
+		CA5004B02A8B3F1600ED6943 /* UICollor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004AF2A8B3F1600ED6943 /* UICollor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA5004892A8A88EE00ED6943 /* Trackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA50048C2A8A88EE00ED6943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA50048E2A8A88EE00ED6943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA5004902A8A88EE00ED6943 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA5004902A8A88EE00ED6943 /* TrackersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackersViewController.swift; sourceTree = "<group>"; };
 		CA5004962A8A88EE00ED6943 /* Trackers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trackers.xcdatamodel; sourceTree = "<group>"; };
 		CA5004982A8A88EE00ED6943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA50049B2A8A88EE00ED6943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA50049D2A8A88EE00ED6943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5004A62A8B3C4A00ED6943 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CA5004A82A8B3CA100ED6943 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		CA5004AB2A8B3EEC00ED6943 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		CA5004AD2A8B3EFF00ED6943 /* DateHalper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHalper.swift; sourceTree = "<group>"; };
+		CA5004AF2A8B3F1600ED6943 /* UICollor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +68,10 @@
 		CA50048B2A8A88EE00ED6943 /* Trackers */ = {
 			isa = PBXGroup;
 			children = (
+				CA5004AA2A8B3EB700ED6943 /* Helpers */,
 				CA50048C2A8A88EE00ED6943 /* AppDelegate.swift */,
 				CA50048E2A8A88EE00ED6943 /* SceneDelegate.swift */,
-				CA5004902A8A88EE00ED6943 /* ViewController.swift */,
+				CA5004902A8A88EE00ED6943 /* TrackersViewController.swift */,
 				CA5004982A8A88EE00ED6943 /* Assets.xcassets */,
 				CA50049A2A8A88EE00ED6943 /* LaunchScreen.storyboard */,
 				CA50049D2A8A88EE00ED6943 /* Info.plist */,
@@ -73,6 +80,16 @@
 				CA5004A82A8B3CA100ED6943 /* StatisticViewController.swift */,
 			);
 			path = Trackers;
+			sourceTree = "<group>";
+		};
+		CA5004AA2A8B3EB700ED6943 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CA5004AB2A8B3EEC00ED6943 /* Date+Extension.swift */,
+				CA5004AD2A8B3EFF00ED6943 /* DateHalper.swift */,
+				CA5004AF2A8B3F1600ED6943 /* UICollor+Extension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA5004972A8A88EE00ED6943 /* Trackers.xcdatamodeld in Sources */,
-				CA5004912A8A88EE00ED6943 /* ViewController.swift in Sources */,
+				CA5004912A8A88EE00ED6943 /* TrackersViewController.swift in Sources */,
 				CA50048D2A8A88EE00ED6943 /* AppDelegate.swift in Sources */,
 				CA5004A92A8B3CA100ED6943 /* StatisticViewController.swift in Sources */,
+				CA5004AC2A8B3EEC00ED6943 /* Date+Extension.swift in Sources */,
+				CA5004AE2A8B3EFF00ED6943 /* DateHalper.swift in Sources */,
 				CA5004A72A8B3C4A00ED6943 /* TabBarController.swift in Sources */,
+				CA5004B02A8B3F1600ED6943 /* UICollor+Extension.swift in Sources */,
 				CA50048F2A8A88EE00ED6943 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,7 +39,7 @@ final class TrackersViewController: UIViewController {
     
     private lazy var infoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "SearchError")
+        imageView.image = UIImage(named: "searchError")
         return imageView
     }()
     
@@ -104,7 +104,7 @@ final class TrackersViewController: UIViewController {
         infoLabel.isHidden = isCurrentDateTracker
         infoImageView.isHidden = isCurrentDateTracker
         infoLabel.text = "Что будем отслеживать?"
-        infoImageView.image = UIImage(named: "Placeholder")
+        infoImageView.image = UIImage(named: "star")
     }
     
     private func addSubviews() {
@@ -144,7 +144,7 @@ final class TrackersViewController: UIViewController {
                 infoLabel.isHidden = false
                 infoImageView.isHidden = false
                 infoLabel.text = "Ничего не найдено"
-                infoImageView.image = UIImage(named: "SearchError")
+                infoImageView.image = UIImage(named: "searchError")
             }
         }
         visibleCategories = categoriesFiltered

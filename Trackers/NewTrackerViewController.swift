@@ -252,8 +252,6 @@ extension NewTrackerViewController: UITableViewDataSource {
 extension NewTrackerViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
-        case 0:
-            break
         case 1:
             let scheduleVC = ScheduleViewController()
             scheduleVC.delegate = self
@@ -290,7 +288,7 @@ extension NewTrackerViewController: UITextFieldDelegate {
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
         guard let textField = textField.text else { return }
-        if textField.isEmpty == true {
+        if textField.isEmpty {
             saveButton.backgroundColor = .trBlack
             saveButton.setTitleColor(.white, for: .normal)
             saveButton.isEnabled = false

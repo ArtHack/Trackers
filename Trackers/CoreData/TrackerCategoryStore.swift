@@ -84,8 +84,10 @@ final class TrackerCategoryStore: NSObject {
     
     func saveTracker(tracker: Tracker, to categoryName: String) throws {
         let trackerCoreData = try trackerStore.makeTracker(from: tracker)
-        if let existingCategory = try? fetchCategory(with: categoryName) {
-            var newCoreDataTrackers = existingCategory.trackers!.allObjects as! [TrackerCoreData]
+        if let existingCategory = try? fetchCategory(with: categoryName),
+           let existingTrackers = existingCategory.trackers?.allObjects as? [TrackerCoreData]
+        {
+            var newCoreDataTrackers = existingTrackers
             newCoreDataTrackers.append(trackerCoreData)
             existingCategory.trackers = NSSet(array: newCoreDataTrackers)
         } else {

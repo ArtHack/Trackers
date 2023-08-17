@@ -39,6 +39,9 @@
 		CA5004D72A8B53E300ED6943 /* StoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004D62A8B53E300ED6943 /* StoreError.swift */; };
 		CA5004D92A8B53F400ED6943 /* StoreUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004D82A8B53F400ED6943 /* StoreUpdates.swift */; };
 		CA5004DB2A8B541A00ED6943 /* WeekDaysMarshalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004DA2A8B541A00ED6943 /* WeekDaysMarshalling.swift */; };
+		CADC39F02A8D1021008B7E76 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC39EF2A8D1021008B7E76 /* OnboardingViewController.swift */; };
+		CADC39F22A8D103C008B7E76 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC39F12A8D103C008B7E76 /* PageViewController.swift */; };
+		CADC39F42A8D1047008B7E76 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC39F32A8D1047008B7E76 /* Pages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +78,9 @@
 		CA5004D62A8B53E300ED6943 /* StoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreError.swift; sourceTree = "<group>"; };
 		CA5004D82A8B53F400ED6943 /* StoreUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreUpdates.swift; sourceTree = "<group>"; };
 		CA5004DA2A8B541A00ED6943 /* WeekDaysMarshalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysMarshalling.swift; sourceTree = "<group>"; };
+		CADC39EF2A8D1021008B7E76 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CADC39F12A8D103C008B7E76 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		CADC39F32A8D1047008B7E76 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 		CA50048B2A8A88EE00ED6943 /* Trackers */ = {
 			isa = PBXGroup;
 			children = (
+				CADC39EE2A8D0FF4008B7E76 /* Onboarding */,
 				CA5004CF2A8B537D00ED6943 /* CoreData */,
 				CA5004AA2A8B3EB700ED6943 /* Helpers */,
 				CA50048C2A8A88EE00ED6943 /* AppDelegate.swift */,
@@ -158,6 +165,16 @@
 				CA5004DA2A8B541A00ED6943 /* WeekDaysMarshalling.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CADC39EE2A8D0FF4008B7E76 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CADC39EF2A8D1021008B7E76 /* OnboardingViewController.swift */,
+				CADC39F12A8D103C008B7E76 /* PageViewController.swift */,
+				CADC39F32A8D1047008B7E76 /* Pages.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,12 +260,14 @@
 				CA5004D92A8B53F400ED6943 /* StoreUpdates.swift in Sources */,
 				CA5004B42A8B416500ED6943 /* Tracker.swift in Sources */,
 				CA5004D52A8B53C600ED6943 /* TrackerRecordStore.swift in Sources */,
+				CADC39F02A8D1021008B7E76 /* OnboardingViewController.swift in Sources */,
 				CA5004D72A8B53E300ED6943 /* StoreError.swift in Sources */,
 				CA50048D2A8A88EE00ED6943 /* AppDelegate.swift in Sources */,
 				CA5004C22A8B4BF700ED6943 /* TypeNewTrackerViewController.swift in Sources */,
 				CA5004CE2A8B4F4C00ED6943 /* ScheduleViewController.swift in Sources */,
 				CA5004A92A8B3CA100ED6943 /* StatisticViewController.swift in Sources */,
 				CA5004C02A8B4B2B00ED6943 /* HeaderCollectionView.swift in Sources */,
+				CADC39F22A8D103C008B7E76 /* PageViewController.swift in Sources */,
 				CA5004DB2A8B541A00ED6943 /* WeekDaysMarshalling.swift in Sources */,
 				CA5004B82A8B41A600ED6943 /* TrackerRecord.swift in Sources */,
 				CA5004BC2A8B41F700ED6943 /* WeekDay.swift in Sources */,
@@ -256,6 +275,7 @@
 				CA5004AC2A8B3EEC00ED6943 /* Date+Extension.swift in Sources */,
 				CA5004D12A8B539D00ED6943 /* TrackerStore.swift in Sources */,
 				CA5004AE2A8B3EFF00ED6943 /* DateHalper.swift in Sources */,
+				CADC39F42A8D1047008B7E76 /* Pages.swift in Sources */,
 				CA5004D32A8B53B600ED6943 /* TrackerCategoryStore.swift in Sources */,
 				CA5004CA2A8B4D6000ED6943 /* GeometricParms.swift in Sources */,
 				CA5004BA2A8B41B400ED6943 /* TypeTracker.swift in Sources */,

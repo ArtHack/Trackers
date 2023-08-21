@@ -1,23 +1,14 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
         
-        if !UserDefaults.standard.bool(forKey: "hasShownOnboarding") {
-            UserDefaults.standard.set(true, forKey: "hasShownOnboarding")
-            let onboardingViewController = PageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
-            window.rootViewController = onboardingViewController
-        } else {
-            let tabBarVC = TabBarController()
-            window.rootViewController = tabBarVC
-        }
+        window.rootViewController = InitialViewController()
         window.makeKeyAndVisible()
         self.window = window
     }
@@ -50,3 +41,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 }
+

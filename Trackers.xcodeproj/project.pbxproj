@@ -33,6 +33,9 @@
 		CA5004D32A8B53B600ED6943 /* TrackerCategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004D22A8B53B600ED6943 /* TrackerCategoryStore.swift */; };
 		CA5004D52A8B53C600ED6943 /* TrackerRecordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004D42A8B53C600ED6943 /* TrackerRecordStore.swift */; };
 		CA5004D72A8B53E300ED6943 /* StoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004D62A8B53E300ED6943 /* StoreError.swift */; };
+		CA9CF3DE2A93DEC5008C69AC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA9CF3DD2A93DEC5008C69AC /* SnapKit */; };
+		CA9CF3E72A93DFCA008C69AC /* TrackersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9CF3E62A93DFCA008C69AC /* TrackersTests.swift */; };
+		CA9CF3EF2A93E0BC008C69AC /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = CA9CF3EE2A93E0BC008C69AC /* SnapshotTesting */; };
 		CADC39F02A8D1021008B7E76 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC39EF2A8D1021008B7E76 /* OnboardingViewController.swift */; };
 		CADC39F22A8D103C008B7E76 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC39F12A8D103C008B7E76 /* PageViewController.swift */; };
 		CADC39F42A8D1047008B7E76 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC39F32A8D1047008B7E76 /* Pages.swift */; };
@@ -54,6 +57,16 @@
 		CADC3A972A927EBA008B7E76 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CADC3A992A927EBA008B7E76 /* Localizable.strings */; };
 		CADC3A9C2A928799008B7E76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADC3A9B2A928799008B7E76 /* Constants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA9CF3E82A93DFCA008C69AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA5004812A8A88EE00ED6943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5004882A8A88EE00ED6943;
+			remoteInfo = Trackers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0263C098E055B23A33224D3E /* Pods-Trackers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trackers.debug.xcconfig"; path = "Target Support Files/Pods-Trackers/Pods-Trackers.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +99,8 @@
 		CA5004D22A8B53B600ED6943 /* TrackerCategoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCategoryStore.swift; sourceTree = "<group>"; };
 		CA5004D42A8B53C600ED6943 /* TrackerRecordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerRecordStore.swift; sourceTree = "<group>"; };
 		CA5004D62A8B53E300ED6943 /* StoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreError.swift; sourceTree = "<group>"; };
+		CA9CF3E42A93DFCA008C69AC /* TrackersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA9CF3E62A93DFCA008C69AC /* TrackersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackersTests.swift; sourceTree = "<group>"; };
 		CADC39EF2A8D1021008B7E76 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CADC39F12A8D103C008B7E76 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		CADC39F32A8D1047008B7E76 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
@@ -117,6 +132,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				340D2BFC3B7223F554E8FB06 /* libPods-Trackers.a in Frameworks */,
+				CA9CF3DE2A93DEC5008C69AC /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA9CF3E12A93DFCA008C69AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9CF3EF2A93E0BC008C69AC /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CA50048B2A8A88EE00ED6943 /* Trackers */,
+				CA9CF3E52A93DFCA008C69AC /* TrackersTests */,
 				CA50048A2A8A88EE00ED6943 /* Products */,
 				5F31A6D88B4E078EAE2BF663 /* Pods */,
 				D389293ABB0BAF07651AF961 /* Frameworks */,
@@ -146,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5004892A8A88EE00ED6943 /* Trackers.app */,
+				CA9CF3E42A93DFCA008C69AC /* TrackersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +217,14 @@
 				CA5004D62A8B53E300ED6943 /* StoreError.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CA9CF3E52A93DFCA008C69AC /* TrackersTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA9CF3E62A93DFCA008C69AC /* TrackersTests.swift */,
+			);
+			path = TrackersTests;
 			sourceTree = "<group>";
 		};
 		CADC39EE2A8D0FF4008B7E76 /* Onboarding */ = {
@@ -333,10 +367,32 @@
 			);
 			name = Trackers;
 			packageProductDependencies = (
+				CA9CF3DD2A93DEC5008C69AC /* SnapKit */,
 			);
 			productName = Trackers;
 			productReference = CA5004892A8A88EE00ED6943 /* Trackers.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CA9CF3E32A93DFCA008C69AC /* TrackersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA9CF3EA2A93DFCA008C69AC /* Build configuration list for PBXNativeTarget "TrackersTests" */;
+			buildPhases = (
+				CA9CF3E02A93DFCA008C69AC /* Sources */,
+				CA9CF3E12A93DFCA008C69AC /* Frameworks */,
+				CA9CF3E22A93DFCA008C69AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA9CF3E92A93DFCA008C69AC /* PBXTargetDependency */,
+			);
+			name = TrackersTests;
+			packageProductDependencies = (
+				CA9CF3EE2A93E0BC008C69AC /* SnapshotTesting */,
+			);
+			productName = TrackersTests;
+			productReference = CA9CF3E42A93DFCA008C69AC /* TrackersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -351,6 +407,10 @@
 					CA5004882A8A88EE00ED6943 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
+					CA9CF3E32A93DFCA008C69AC = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = CA5004882A8A88EE00ED6943;
+					};
 				};
 			};
 			buildConfigurationList = CA5004842A8A88EE00ED6943 /* Build configuration list for PBXProject "Trackers" */;
@@ -364,12 +424,15 @@
 			);
 			mainGroup = CA5004802A8A88EE00ED6943;
 			packageReferences = (
+				CA9CF3DC2A93DEC5008C69AC /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CA9CF3ED2A93E0BC008C69AC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = CA50048A2A8A88EE00ED6943 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CA5004882A8A88EE00ED6943 /* Trackers */,
+				CA9CF3E32A93DFCA008C69AC /* TrackersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -383,6 +446,13 @@
 				CADC3A972A927EBA008B7E76 /* Localizable.strings in Resources */,
 				CA5004992A8A88EE00ED6943 /* Assets.xcassets in Resources */,
 				CADC3A902A927DB3008B7E76 /* Localizable.stringsdict in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA9CF3E22A93DFCA008C69AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +532,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA9CF3E02A93DFCA008C69AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9CF3E72A93DFCA008C69AC /* TrackersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA9CF3E92A93DFCA008C69AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA5004882A8A88EE00ED6943 /* Trackers */;
+			targetProxy = CA9CF3E82A93DFCA008C69AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA50049A2A8A88EE00ED6943 /* LaunchScreen.storyboard */ = {
@@ -667,6 +753,42 @@
 			};
 			name = Release;
 		};
+		CA9CF3EB2A93DFCA008C69AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G84RW6GCS5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArtHack.TrackersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trackers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trackers";
+			};
+			name = Debug;
+		};
+		CA9CF3EC2A93DFCA008C69AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G84RW6GCS5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ArtHack.TrackersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trackers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trackers";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -688,7 +810,48 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CA9CF3EA2A93DFCA008C69AC /* Build configuration list for PBXNativeTarget "TrackersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA9CF3EB2A93DFCA008C69AC /* Debug */,
+				CA9CF3EC2A93DFCA008C69AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA9CF3DC2A93DEC5008C69AC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		CA9CF3ED2A93E0BC008C69AC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA9CF3DD2A93DEC5008C69AC /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9CF3DC2A93DEC5008C69AC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CA9CF3EE2A93E0BC008C69AC /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA9CF3ED2A93E0BC008C69AC /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CA5004952A8A88EE00ED6943 /* Model.xcdatamodeld */ = {

@@ -14,7 +14,6 @@
 		CA5004972A8A88EE00ED6943 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA5004952A8A88EE00ED6943 /* Model.xcdatamodeld */; };
 		CA5004992A8A88EE00ED6943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5004982A8A88EE00ED6943 /* Assets.xcassets */; };
 		CA50049C2A8A88EE00ED6943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA50049A2A8A88EE00ED6943 /* LaunchScreen.storyboard */; };
-		CA5004A52A8A9F2D00ED6943 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA5004A42A8A9F2D00ED6943 /* SnapKit */; };
 		CA5004A72A8B3C4A00ED6943 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004A62A8B3C4A00ED6943 /* TabBarController.swift */; };
 		CA5004A92A8B3CA100ED6943 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004A82A8B3CA100ED6943 /* StatisticViewController.swift */; };
 		CA5004AC2A8B3EEC00ED6943 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5004AB2A8B3EEC00ED6943 /* Date+Extension.swift */; };
@@ -117,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5004A52A8A9F2D00ED6943 /* SnapKit in Frameworks */,
 				340D2BFC3B7223F554E8FB06 /* libPods-Trackers.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +333,6 @@
 			);
 			name = Trackers;
 			packageProductDependencies = (
-				CA5004A42A8A9F2D00ED6943 /* SnapKit */,
 			);
 			productName = Trackers;
 			productReference = CA5004892A8A88EE00ED6943 /* Trackers.app */;
@@ -367,7 +364,6 @@
 			);
 			mainGroup = CA5004802A8A88EE00ED6943;
 			packageReferences = (
-				CA5004A32A8A9F2D00ED6943 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = CA50048A2A8A88EE00ED6943 /* Products */;
 			projectDirPath = "";
@@ -693,25 +689,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CA5004A32A8A9F2D00ED6943 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				branch = develop;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CA5004A42A8A9F2D00ED6943 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA5004A32A8A9F2D00ED6943 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CA5004952A8A88EE00ED6943 /* Model.xcdatamodeld */ = {

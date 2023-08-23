@@ -85,8 +85,8 @@ final class ScheduleViewController: UIViewController {
             tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 73),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            tableView.bottomAnchor.constraint(equalTo: confirmButton.topAnchor, constant: -39),
-            
+            tableView.heightAnchor.constraint(equalToConstant: 524),
+
             confirmButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
             confirmButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             confirmButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
@@ -138,6 +138,7 @@ extension ScheduleViewController: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension ScheduleViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
         WeekDay.allCases.count
     }
     

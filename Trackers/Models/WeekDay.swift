@@ -1,13 +1,15 @@
 import Foundation
 
 enum WeekDay: String, CaseIterable {
-    case monday = "Понедельник"
-    case tuesday = "Вторник"
-    case wednesday = "Среда"
-    case thursday = "Четверг"
-    case friday = "Пятница"
-    case saturday = "Суббота"
-    case sunday = "Воскресенье"
+
+    
+    case monday = "Monday"
+    case tuesday = "Tuesday"
+    case wednesday = "Wednesday"
+    case thursday = "Thursday"
+    case friday = "Friday"
+    case saturday = "Saturday"
+    case sunday = "Sunday"
     
     var shortName: String {
         switch self {
@@ -19,10 +21,20 @@ enum WeekDay: String, CaseIterable {
         case .saturday: return "Сб"
         case .sunday: return "Вс"
         }
+        
+        
     }
     
     var localizedName: String {
-        NSLocalizedString(rawValue, comment: "")
+        switch self {
+        case .monday: return NSLocalizedString("Monday", comment: "")
+        case .tuesday: return NSLocalizedString("Tuesday", comment: "")
+        case .wednesday: return NSLocalizedString("Wednesday", comment: "")
+        case .thursday: return NSLocalizedString("Thursday", comment: "")
+        case .friday: return NSLocalizedString("Friday", comment: "")
+        case .saturday: return NSLocalizedString("Saturday", comment: "")
+        case .sunday: return NSLocalizedString("Sunday", comment: "")
+        }
     }
 }
 

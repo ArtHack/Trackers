@@ -1,15 +1,15 @@
 import Foundation
 
 enum Pages: CaseIterable {
-case pageOne
-case pageTwo
+    case pageOne
+    case pageTwo
     
     var title: String {
         switch self {
         case .pageOne:
-            return "Отслеживайте только то, что хотите"
+            return NSLocalizedString("backgroundImage.blue.text", comment: "")
         case .pageTwo:
-            return "Даже если это не литры воды и йога"
+            return NSLocalizedString("backgroundImage.red.text", comment: "")
         }
     }
     

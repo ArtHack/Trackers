@@ -1,5 +1,4 @@
 import UIKit
-import SnapKit
 
 final class PageViewController: UIPageViewController {
     private var pages: [Pages] = Pages.allCases
@@ -10,17 +9,20 @@ final class PageViewController: UIPageViewController {
         pageControl.currentPage = 0
         pageControl.currentPageIndicatorTintColor = .black
         pageControl.pageIndicatorTintColor = .systemGray
+        pageControl.addTarget(self, action: #selector(pageControlDidChange), for: .valueChanged)
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
        return pageControl
     }()
     
     private lazy var onboardingButton: UIButton = {
        let button = UIButton()
-        button.setTitle("Вот это технологии!", for: .normal)
+        button.setTitle(NSLocalizedString("onboardingPageViewController.Button", comment: ""), for: .normal)
         button.titleLabel?.textColor = .white
         button.titleLabel?.font = .systemFont(ofSize: 16, weight: .medium)
         button.tintColor = .white
         button.backgroundColor = .black
         button.layer.cornerRadius = 16
+        button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(onboardingButtonTapped), for: .touchUpInside)
         return button
     }()
@@ -40,6 +42,13 @@ final class PageViewController: UIPageViewController {
         present(tabBarVC, animated: true)
     }
     
+    @objc
+    private func pageControlDidChange(_ sender: UIPageControl) {
+        let current = sender.currentPage
+        let initialVC = OnboardingViewController(with: pages[current])
+        setViewControllers([initialVC], direction: .forward, animated: true, completion: nil)
+    }
+    
     private func setupPageController() {
         dataSource = self
         delegate = self
@@ -52,19 +61,17 @@ final class PageViewController: UIPageViewController {
             view.addSubview($0)
         }
     }
-
+    
     private func addConstraints() {
-        pageControl.snp.makeConstraints { make in
-            make.bottom.equalTo(onboardingButton.snp.top).offset(-24)
-            make.centerX.equalToSuperview()
-        }
-        
-        onboardingButton.snp.makeConstraints { make in
-            make.bottom.equalToSuperview().offset(-84)
-            make.leading.equalToSuperview().offset(20)
-            make.trailing.equalToSuperview().offset(-20)
-            make.height.equalTo(60)
-        }
+        NSLayoutConstraint.activate([
+            pageControl.bottomAnchor.constraint(equalTo: onboardingButton.topAnchor, constant: -24),
+            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            onboardingButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -84),
+            onboardingButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            onboardingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            onboardingButton.heightAnchor.constraint(equalToConstant: 60),
+        ])
     }
 }
 
@@ -105,3 +112,4 @@ extension PageViewController: UIPageViewControllerDataSource {
         return vc
     }
 }
+

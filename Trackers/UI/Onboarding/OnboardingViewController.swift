@@ -1,13 +1,14 @@
 import UIKit
-import SnapKit
 
 final class OnboardingViewController: UIViewController {
-    var page: Pages
+    private(set) var page: Pages
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         let image = UIImage(named: String(page.index))
         imageView.image = image
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
         return imageView
     }()
     
@@ -15,9 +16,11 @@ final class OnboardingViewController: UIViewController {
         let label = UILabel()
         label.font = .systemFont(ofSize: 32, weight: .bold)
         label.text = page.title
-        label.textColor = .trBlack
+        label.textColor = .black
         label.numberOfLines = 3
         label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+
         return label
     }()
     
@@ -43,16 +46,17 @@ final class OnboardingViewController: UIViewController {
             view.addSubview($0)
         }
     }
-
+    
     private func addConstraints() {
-        imageView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-        
-        titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(view.snp.centerY).offset(26)
-            make.leading.equalTo(view).offset(16)
-            make.trailing.equalTo(view).offset(-16)
-        }
+        NSLayoutConstraint.activate([
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            titleLabel.topAnchor.constraint(equalTo: view.centerYAnchor, constant: 26),
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+        ])
     }
 }

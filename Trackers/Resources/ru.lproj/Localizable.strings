@@ -142,7 +142,7 @@
 // Medium value
 "mediumValue" = "Среднее значение";
 
-// WeedDay
+// WeekDay
 "Monday" = "Понедельник";
 "Tuesday" = "Вторник";
 "Wednesday" = "Среда";
@@ -150,3 +150,12 @@
 "Friday" = "Пятница";
 "Saturday" = "Суббота";
 "Sunday" = "Воскресенье";
+
+// WeekDay short
+"Mo" = "Пн";
+"Tu" = "Вт";
+"We" = "Ср";
+"Th" = "Чт";
+"Fr" = "Пн";
+"Sa" = "Сб";
+"Su" = "Вс";

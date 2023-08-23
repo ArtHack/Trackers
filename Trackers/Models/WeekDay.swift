@@ -13,13 +13,13 @@ enum WeekDay: String, CaseIterable {
     
     var shortName: String {
         switch self {
-        case .monday: return "Пн"
-        case .tuesday: return "Вт"
-        case .wednesday: return "Ср"
-        case .thursday: return "Чт"
-        case .friday: return "Пт"
-        case .saturday: return "Сб"
-        case .sunday: return "Вс"
+        case .monday: return NSLocalizedString("Mo", comment: "")
+        case .tuesday: return NSLocalizedString("Tu", comment: "")
+        case .wednesday: return NSLocalizedString("We", comment: "")
+        case .thursday: return NSLocalizedString("Th", comment: "")
+        case .friday: return NSLocalizedString("Fr", comment: "")
+        case .saturday: return NSLocalizedString("Sa", comment: "")
+        case .sunday: return NSLocalizedString("Su", comment: "")
         }
         
         

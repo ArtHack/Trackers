@@ -34,6 +34,11 @@ final class CategoriesViewController: UIViewController {
         let button = UIButton(type: .custom)
         button.backgroundColor = .toggleBlackWhiteColor
         button.setTitle(NSLocalizedString("addCategory", comment: ""), for: .normal)
+        if self.traitCollection.userInterfaceStyle == .dark {
+            button.setTitleColor(.black, for: .normal)
+        } else {
+            button.setTitleColor(.white, for: .normal)
+        }
         button.titleLabel?.textAlignment = .center
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         button.layer.masksToBounds = true

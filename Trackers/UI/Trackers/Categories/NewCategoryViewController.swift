@@ -32,6 +32,11 @@ final class CreateCategoryViewController: UIViewController {
         button.backgroundColor = .trGray
         button.isEnabled = false
         button.setTitle(NSLocalizedString("ready", comment: ""), for: .normal)
+        if self.traitCollection.userInterfaceStyle == .dark {
+            button.setTitleColor(.black, for: .normal)
+        } else {
+            button.setTitleColor(.white, for: .normal)
+        }
         button.titleLabel?.textAlignment = .center
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         button.layer.masksToBounds = true

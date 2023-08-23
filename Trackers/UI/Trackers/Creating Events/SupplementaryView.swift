@@ -2,7 +2,9 @@ import UIKit
 import SnapKit
 
 final class SupplementaryView: UICollectionReusableView {
-    lazy var titleLabel: UILabel = {
+    static let identifier = "SuplementaryView"
+    
+    lazy var headerLabel: UILabel = {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 19, weight: .bold)
         label.textColor = .trBlack
@@ -12,10 +14,9 @@ final class SupplementaryView: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        addSubview(titleLabel)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(headerLabel)
 
-        titleLabel.snp.makeConstraints { make in
+        headerLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(28)
             make.centerY.equalToSuperview()
             make.bottom.equalToSuperview()

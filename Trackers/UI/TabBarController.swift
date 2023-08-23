@@ -1,39 +1,52 @@
 import UIKit
 
-class TabBarController: UITabBarController {
+final class TabBarController: UITabBarController {
+    private enum TabBarItem: Int {
+        case tracker
+        case statistic
+        
+        var title: String {
+            switch self {
+            case .tracker:
+                return NSLocalizedString("trackers", comment: "")
+            case .statistic:
+                return NSLocalizedString("statistics", comment: "")
+            }
+        }
+        
+        var iconName: String {
+            switch self {
+            case .tracker:
+                return "record.circle.fill"
+            case .statistic:
+                return "hare.fill"
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        generateTabBar()
-        customiseTabBarAppearance()
+        setupTabBar()
     }
     
-    private func generateTabBar() {
-        viewControllers = [
-            generateVC(
-                viewController: TrackersViewController(),
-                title: "Tрекеры",
-                image: UIImage(systemName: "record.circle.fill")),
-            generateVC(
-                viewController: StatisticViewController(),
-                title: "Статистика",
-                image: UIImage(systemName: "hare.fill"))
-        ]
-    }
-    
-    private func generateVC(
-        viewController: UIViewController, title: String,  image: UIImage?
-    ) -> UIViewController {
-        viewController.tabBarItem.title = title
-        viewController.tabBarItem.image = image
-        return UINavigationController(rootViewController: viewController)
-    }
-    
-    private func customiseTabBarAppearance() {
-        let tabBarBorder = CALayer()
-        tabBarBorder.backgroundColor = UIColor.trGray.cgColor
-        tabBarBorder.frame = CGRect(x: 0, y: 0, width: tabBar.frame.width, height: 1)
-        tabBar.layer.addSublayer(tabBarBorder)
+    private func setupTabBar() {
+        tabBar.backgroundColor = .trWhite
+        
+        let dataSource: [TabBarItem] = [.tracker, .statistic]
+        
+        self.viewControllers = dataSource.map {
+            switch $0 {
+            case .tracker:
+                return TrackersViewController(trackerStore: TrackerStore())
+            case .statistic:
+                return StatisticViewController(viewModel: StatisticsViewModel())
+            }
+        }
+        
+        viewControllers?.enumerated().forEach {
+            $1.tabBarItem.title = dataSource[$0].title
+            $1.tabBarItem.image = UIImage(systemName: dataSource[$0].iconName)
+        }
     }
 }
